@@ -1,0 +1,15 @@
+.Login {
+    width: 500px;
+    height: 750px;
+    text-align: center;
+    background-color: aqua;
+    padding: 50px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

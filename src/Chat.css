@@ -1,0 +1,20 @@
+main {
+    padding: 25px;
+    height: 80vh;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    background-color: lightblue;
+  }
+  
+  main::-webkit-scrollbar {
+    width: 0.5rem;
+  }
+  
+  main::-webkit-scrollbar-track {
+    background: #1e1e24;
+  }
+  
+  main::-webkit-scrollbar-thumb {
+    background: #6649b8;
+  }
