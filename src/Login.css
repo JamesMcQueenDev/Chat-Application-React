@@ -1,9 +1,5 @@
 .Login {
-    width: 500px;
-    height: 750px;
     text-align: center;
-    background-color: aqua;
-    padding: 50px;
     border-radius: 5px;
     display: flex;
     flex-direction: column;
@@ -12,4 +8,36 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.LoginContent{
+  margin-top: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.MuiButton-root {
+  width: 250px !important;
+  opacity: 0.8;
+}
+
+.MuiButton-root:hover {
+  opacity: 1;
+  transition: 0.3s;
+}
+
+#GoogleButton.MuiButton-root {
+  background-color: #DB4437; /* set your desired background color */
+  color: white; /* set your desired text color */
+}
+
+#FacebookButton.MuiButton-root {
+  background-color: #4267B2; /* set your desired background color */
+  color: white; /* set your desired text color */
+}
+
+#GithubButton.MuiButton-root {
+  background-color: #6e5494; /* set your desired background color */
+  color: white; /* set your desired text color */
 }

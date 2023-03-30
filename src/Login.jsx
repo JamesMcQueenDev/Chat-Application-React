@@ -1,5 +1,11 @@
 import { Facebook, GitHub, Google } from "@mui/icons-material";
-import { Button } from "@mui/material";
+import {
+  Button,
+  ButtonGroup,
+  Card,
+  CardContent,
+  Typography,
+} from "@mui/material";
 import { signInWithRedirect } from "firebase/auth";
 import React from "react";
 import {
@@ -25,31 +31,41 @@ function Login() {
 
   return (
     <div className="Login">
-      <h1>Sign in to Messenger</h1>
-      <Button
-        className="Button"
-        variant="contained"
-        type="submit"
-        onClick={GoogleSignIn}
-      >
-        <Google />
-      </Button>
-      <Button
-        className="Button"
-        variant="contained"
-        type="submit"
-        onClick={GithubSignIn}
-      >
-        <GitHub />
-      </Button>
-      <Button
-        className="Button"
-        variant="contained"
-        type="submit"
-        onClick={FacebookSignIn}
-      >
-        <Facebook />
-      </Button>
+      <Card sx={{ width: 500, height: 1000 }}>
+        <div className="LoginContent">
+          <CardContent>
+            <Typography sx={{ fontSize: 15 }}>
+              <h1>Sign in to Messenger</h1>
+            </Typography>
+            <ButtonGroup variant="contained" orientation="vertical" size="">
+              <Button
+                id="GoogleButton"
+                variant="contained"
+                type="submit"
+                onClick={GoogleSignIn}
+              >
+                <Google />
+              </Button>
+              <Button
+                id="GithubButton"
+                variant="contained"
+                type="submit"
+                onClick={GithubSignIn}
+              >
+                <GitHub />
+              </Button>
+              <Button
+                id="FacebookButton"
+                variant="contained"
+                type="submit"
+                onClick={FacebookSignIn}
+              >
+                <Facebook />
+              </Button>
+            </ButtonGroup>
+          </CardContent>
+        </div>
+      </Card>
     </div>
   );
 }

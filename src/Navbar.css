@@ -1,10 +1,8 @@
 .Navbar {
   display: flex;
   align-items: center;
-  border-bottom: 3px solid lightgray;
 }
 
-.Navbar > .MuiSvgIcon-root{
-  padding: 10px;
-  color: gray;
+.MuiButton-root {
+  width: 250px !important;
 }

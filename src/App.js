@@ -3,6 +3,7 @@ import "./App.css";
 import Dashboard from "./Dashboard";
 import { auth } from "./Firebase";
 import Login from "./Login";
+import "./App.css";
 
 function App() {
   const [user] = useAuthState(auth);

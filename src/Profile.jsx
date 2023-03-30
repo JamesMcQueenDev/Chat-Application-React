@@ -1,11 +1,12 @@
 import React from "react";
 import { auth } from "./Firebase";
+
 import "./Profile.css";
 
 function Profile() {
   const profilePicture = auth.currentUser.photoURL;
   const name = auth.currentUser.displayName;
-  const email = auth.currentUser.phoneNumber;
+  const email = auth.currentUser.email;
 
   return (
     <div className="Profile">

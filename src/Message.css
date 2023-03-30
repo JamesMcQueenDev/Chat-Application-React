@@ -7,6 +7,7 @@
   width: 40px;
   height: 40px;
   border-radius: 50%;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
   margin: 2px 5px;
 }
 
@@ -16,6 +17,7 @@
   line-height: 24px;
   padding: 10px 20px;
   border-radius: 25px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
   position: relative;
   color: white;
   text-align: center;
@@ -32,7 +34,7 @@
 }
 .Received p {
   color: white;
-  background: #0b93f6;
+  background: #52307c;
   align-self: flex-end;
 }
 
