@@ -11,14 +11,16 @@ const Chat = () => {
   const scroll = useRef();
 
   useEffect(() => {
-    const q = query(collection(firestore, "messages"), orderBy("timestamp"));
-    const unsubscribe = onSnapshot(q, (querySnapshot) => {
+    const messageQuery = query(
+      collection(firestore, "messages"),
+      orderBy("timestamp")
+    );
+    const unsubscribe = onSnapshot(messageQuery, (querySnapshot) => {
       let messages = [];
       querySnapshot.forEach((doc) => {
         messages.push({ ...doc.data(), id: doc.id });
       });
       setMessages(messages);
-      scroll.current.scrollIntoView({ behavior: "smooth" });
     });
     return () => unsubscribe();
   }, []);
@@ -33,8 +35,8 @@ const Chat = () => {
       </main>
       <div className="ChatFooter">
         <SendMessage scroll={scroll} />
+        <span ref={scroll}></span>
       </div>
-      <span ref={scroll}></span>
     </>
   );
 };

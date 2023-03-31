@@ -4,7 +4,7 @@ main {
     overflow-y: scroll;
     display: flex;
     flex-direction: column;
-    background-color: lightblue;
+    background-color: 	#7a7f86;
   }
   
   main::-webkit-scrollbar {

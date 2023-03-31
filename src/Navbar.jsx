@@ -12,7 +12,7 @@ const Navbar = () => {
   const image = auth.currentUser ? auth.currentUser.photoURL : null;
 
   return (
-    <Card>
+    <Card id="Navbar">
       <div className="Navbar">
         <Logout />
         <Link>

@@ -8,6 +8,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    background-color: #7289da;
 }
 
 .LoginContent{
@@ -17,8 +18,13 @@
   align-items: center;
 }
 
-.MuiButton-root {
-  width: 250px !important;
+#LoginCard.MuiCard-root{
+  background-color: #7289da !important;
+}
+
+.LogButton.MuiButton-root {
+  width: 400px !important;
+  height: 50px !important;
   opacity: 0.8;
 }
 

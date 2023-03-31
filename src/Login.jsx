@@ -31,15 +31,16 @@ function Login() {
 
   return (
     <div className="Login">
-      <Card sx={{ width: 500, height: 1000 }}>
+      <Card id="LoginCard" sx={{ width: 700, height: 1000 }}>
         <div className="LoginContent">
           <CardContent>
             <Typography sx={{ fontSize: 15 }}>
-              <h1>Sign in to Messenger</h1>
+              <h1>Sign In to Messenger</h1>
             </Typography>
             <ButtonGroup variant="contained" orientation="vertical" size="">
               <Button
                 id="GoogleButton"
+                className="LogButton"
                 variant="contained"
                 type="submit"
                 onClick={GoogleSignIn}
@@ -48,6 +49,7 @@ function Login() {
               </Button>
               <Button
                 id="GithubButton"
+                className="LogButton"
                 variant="contained"
                 type="submit"
                 onClick={GithubSignIn}
@@ -56,6 +58,7 @@ function Login() {
               </Button>
               <Button
                 id="FacebookButton"
+                className="LogButton"
                 variant="contained"
                 type="submit"
                 onClick={FacebookSignIn}
