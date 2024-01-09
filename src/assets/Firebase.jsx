@@ -9,11 +9,16 @@ import { getFirestore } from "firebase/firestore";
 
 const firebaseApp = initializeApp({
   apiKey: "AIzaSyDiNaQhvUjzcE6WrMZVIAbWxwgr-_OdFUU",
+
   authDomain: "messenger-b30be.firebaseapp.com",
+
   projectId: "messenger-b30be",
+
   storageBucket: "messenger-b30be.appspot.com",
+
   messagingSenderId: "616757283201",
-  appId: "1:616757283201:web:f4f3199e529db09d9d4080",
+
+  appId: "1:616757283201:web:ae4e3376fff85c1e9d4080",
 });
 
 const firestore = getFirestore(firebaseApp);

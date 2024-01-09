@@ -3,7 +3,7 @@ import { Avatar, Button, ButtonGroup, Card } from "@mui/material";
 import React from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { Link, NavLink } from "react-router-dom";
-import { auth } from "./Firebase";
+import { auth } from "../../assets/Firebase";
 import Logout from "./LogOut";
 import "./Navbar.css";
 

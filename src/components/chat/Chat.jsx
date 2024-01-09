@@ -1,6 +1,6 @@
 import { query, collection, orderBy, onSnapshot } from "firebase/firestore";
 import React, { useEffect, useRef, useState } from "react";
-import firestore from "./Firebase";
+import firestore from "../../assets/Firebase";
 import Message from "./Message";
 import SendMessage from "./SendMessage";
 import "./Chat.css";

@@ -1,6 +1,6 @@
 import { addDoc, collection, serverTimestamp } from "firebase/firestore";
 import React, { useState } from "react";
-import firestore, { auth } from "./Firebase";
+import firestore, { auth } from "../../assets/Firebase";
 import "./SendMessage.css";
 
 const SendMessage = (scroll) => {

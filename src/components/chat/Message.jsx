@@ -1,5 +1,5 @@
 import React from "react";
-import { auth } from "./Firebase";
+import { auth } from "../../assets/Firebase";
 import "./Message.css";
 
 const Message = ({ message }) => {

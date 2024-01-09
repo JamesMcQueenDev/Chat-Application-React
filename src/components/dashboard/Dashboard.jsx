@@ -1,9 +1,9 @@
 import { Card } from "@mui/material";
 import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
-import Chat from "./Chat";
-import Navbar from "./Navbar";
-import Profile from "./Profile";
+import Chat from "../chat/Chat";
+import Navbar from "../navbar/Navbar";
+import Profile from "../profile/Profile";
 import "./Dashboard.css";
 
 function Dashboard() {

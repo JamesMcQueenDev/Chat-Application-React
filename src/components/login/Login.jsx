@@ -13,7 +13,7 @@ import {
   facebookProvider,
   githubProvider,
   googleProvider,
-} from "./Firebase";
+} from "../../assets/Firebase";
 import "./Login.css";
 
 function Login() {
